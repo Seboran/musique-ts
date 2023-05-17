@@ -1,3 +1,7 @@
-export default class HauteurNote {
-  constructor(public valeur: number) {}
+import { NoeudModel } from 'transpilation-ts'
+
+export default class HauteurNote extends NoeudModel {
+  constructor(public valeur: number) {
+    super()
+  }
 }

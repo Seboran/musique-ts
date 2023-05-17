@@ -1,8 +1,10 @@
+import { NoeudModel } from 'transpilation-ts'
 import Note from './Note'
 
-export default class Accord {
+export default class Accord extends NoeudModel {
   public notes: Set<Note>
   constructor(notes: Set<Note> | Array<Note>) {
+    super()
     this.notes = this.mapToSet(notes)
   }
 

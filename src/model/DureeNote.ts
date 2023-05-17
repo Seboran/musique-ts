@@ -1,3 +1,7 @@
-export default class DureeNote {
-  constructor(public valeur: number) {}
+import { NoeudModel } from 'transpilation-ts'
+
+export default class DureeNote extends NoeudModel {
+  constructor(public valeur: number) {
+    super()
+  }
 }
